@@ -22,15 +22,12 @@
     "yaga": false
   },
   "searches": [
-    { "keyword": "iphone 13",        "min_price": 100, "max_price": 400 },
-    { "keyword": "iphone 14",        "min_price": 150, "max_price": 550 },
-    { "keyword": "iphone 15",        "min_price": 300, "max_price": 700 },
-    { "keyword": "macbook",          "min_price": 200, "max_price": 700 },
-    { "keyword": "ipad",             "min_price": 50,  "max_price": 250 },
-    { "keyword": "samsung galaxy s23", "min_price": 150, "max_price": 400 },
-    { "keyword": "sony wh-1000",     "min_price": 50,  "max_price": 200 },
-    { "keyword": "airpods pro",      "min_price": 50,  "max_price": 150 },
-    { "keyword": "playstation 5",    "min_price": 150, "max_price": 350 },
-    { "keyword": "nintendo switch",  "min_price": 80,  "max_price": 200 }
+    { "keyword": "iphone 16",        "min_price": 350, "max_price": 450 },
+    { "keyword": "macbook M1",          "min_price": 150, "max_price": 300 },
+    { "keyword": "playstation 5",    "min_price": 150, "max_price": 250 },
+    { "keyword": "nintendo switch",  "min_price": 60,  "max_price": 175 },
+    { "keyword": "Galaxy watch7",  "min_price": 50,  "max_price": 100 },
+    { "keyword": "Playstation 4 Pro",  "min_price": 50,  "max_price": 100 },
+    { "keyword": "Ryzen 5 3600",  "min_price": 20,  "max_price": 50 }
   ]
 }
