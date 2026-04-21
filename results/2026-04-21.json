@@ -1,6 +1,6 @@
 {
-  "run_at": "2026-04-21T07:13:45+00:00",
-  "total": 53,
+  "run_at": "2026-04-21T07:53:41+00:00",
+  "total": 58,
   "listings": [
     {
       "id": "soov:26049411",
@@ -690,6 +690,71 @@
       "median": 160.0,
       "pct_under_med": 34,
       "first_seen": "2026-04-21T07:13:45+00:00"
+    },
+    {
+      "id": "kuldnebors:94391471",
+      "title": "NINTENDO SWITCH/LITE/OLED MODCHIP PAIGALDAMINE",
+      "price": 75.0,
+      "url": "https://www.kuldnebors.ee/search/audio-video-foto/mangukonsoolid/nintendo-switch-lite-oled-modchip-paigaldamine/search.mec?pob_post_id=94391471&pob_action=show_post&pob_cat_id=10841&pob_browser_offset=0&pob_view_language_id=et&search_O_string=nintendo+switch",
+      "site": "kuldnebors.ee",
+      "location": "Tartu",
+      "date": "14.04.26",
+      "keyword": "nintendo switch",
+      "median": 150.0,
+      "pct_under_med": 50,
+      "first_seen": "2026-04-21T07:53:41+00:00"
+    },
+    {
+      "id": "kuldnebors:96912680",
+      "title": "XBOX SERIES X 1TB SSD + MÄNG",
+      "price": 365.0,
+      "url": "https://www.kuldnebors.ee/search/arvutid/arvutimangud/xbox-series-x-1tb-ssd-mang/search.mec?pob_post_id=96912680&pob_action=show_post&pob_cat_id=11150&pob_browser_offset=0&pob_view_language_id=et&search_O_string=xbox+series+x",
+      "site": "kuldnebors.ee",
+      "location": "Harjumaa",
+      "date": "28.10.25",
+      "keyword": "xbox series x",
+      "median": 372.5,
+      "pct_under_med": 2,
+      "first_seen": "2026-04-21T07:53:41+00:00"
+    },
+    {
+      "id": "kuldnebors:97173607",
+      "title": "XBOX SERIES X 1TB MICROSOFT XB SERIES X",
+      "price": 380.0,
+      "url": "https://www.kuldnebors.ee/search/audio-video-foto/mangukonsoolid/xbox-series-x-1tb-microsoft-xb-series-x/search.mec?pob_post_id=97173607&pob_action=show_post&pob_cat_id=10841&pob_browser_offset=0&pob_view_language_id=et&search_O_string=xbox+series+x",
+      "site": "kuldnebors.ee",
+      "location": "Tallinn",
+      "date": "16.04.26",
+      "keyword": "xbox series x",
+      "median": 372.5,
+      "pct_under_med": -2,
+      "first_seen": "2026-04-21T07:53:41+00:00"
+    },
+    {
+      "id": "kuldnebors:96965343",
+      "title": "SONY PLAYSTATION 5 DUALSENSE WIRELESS CONTROLLER ПУЛЬТ PS5",
+      "price": 50.0,
+      "url": "https://www.kuldnebors.ee/search/audio-video-foto/mangukonsoolide-mangud-ja-lisaseadmed/sony-playstation-5-dualsense-wireless-controller-ps5/search.mec?pob_post_id=96965343&pob_action=show_post&pob_cat_id=11496&pob_browser_offset=0&pob_view_language_id=et&search_O_string=dualsense",
+      "site": "kuldnebors.ee",
+      "location": "Tallinn",
+      "date": "05.04.26",
+      "keyword": "dualsense",
+      "median": 50.0,
+      "pct_under_med": 0,
+      "first_seen": "2026-04-21T07:53:41+00:00"
+    },
+    {
+      "id": "kuldnebors:97166516",
+      "title": "RETRO MÄNGUKOMPLEKT: ORIGINAAL XBOX CONTROLLER S + THRUSTMASTER FERRARI ROOL JA PEDAALID",
+      "price": 40.0,
+      "url": "https://www.kuldnebors.ee/search/audio-video-foto/mangukonsoolid/retro-mangukomplekt-originaal-xbox-controller-s-thrustmaster-ferrari-rool-ja-pedaalid/search.mec?pob_post_id=97166516&pob_action=show_post&pob_cat_id=10841&pob_browser_offset=0&pob_view_language_id=et&search_O_string=xbox+controller",
+      "site": "kuldnebors.ee",
+      "location": "Eesti",
+      "date": "12.04.26",
+      "keyword": "xbox controller",
+      "median": 40.0,
+      "pct_under_med": 0,
+      "first_seen": "2026-04-21T07:53:41+00:00"
     }
   ]
 }
