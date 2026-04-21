@@ -42,13 +42,17 @@ function Invoke-EdgeFetch {
     param(
         [string]$Url,
         [int]$WaitMs = 12000,
-        [string]$UserAgent
+        [string]$UserAgent,
+        [string]$ProfileDir  # Kui määratud, kasutatakse seda profiili ja ei kustutata (cf_clearance cookie säilimiseks)
     )
     if (-not $script:EdgeExe) {
         Write-Warning "Microsoft Edge ei leitud - Edge fetch pole saadaval"
         return $null
     }
-    $profileDir = Join-Path $env:TEMP ("kuulutuste_otsija_edge_" + [guid]::NewGuid().ToString('N').Substring(0,8))
+    $isPersistent = [bool]$ProfileDir
+    if (-not $isPersistent) {
+        $ProfileDir = Join-Path $env:TEMP ("kuulutuste_otsija_edge_" + [guid]::NewGuid().ToString('N').Substring(0,8))
+    }
     try {
         $psi = New-Object System.Diagnostics.ProcessStartInfo
         $psi.FileName = $script:EdgeExe
@@ -63,7 +67,7 @@ function Invoke-EdgeFetch {
             '--no-sandbox',
             '--disable-blink-features=AutomationControlled',
             '--disable-features=IsolateOrigins,site-per-process',
-            "--user-data-dir=`"$profileDir`"",
+            "--user-data-dir=`"$ProfileDir`"",
             "--user-agent=`"$UserAgent`"",
             '--dump-dom',
             "--virtual-time-budget=$WaitMs",
@@ -76,8 +80,9 @@ function Invoke-EdgeFetch {
         if ([string]::IsNullOrWhiteSpace($body)) { return $null }
         [pscustomobject]@{ StatusCode = 200; Body = $body }
     } finally {
-        if (Test-Path -LiteralPath $profileDir) {
-            Remove-Item -LiteralPath $profileDir -Recurse -Force -ErrorAction SilentlyContinue
+        # Ajutine profiil kustutatakse; püsivat profiili (cf cookies) hoiame alles
+        if (-not $isPersistent -and (Test-Path -LiteralPath $ProfileDir)) {
+            Remove-Item -LiteralPath $ProfileDir -Recurse -Force -ErrorAction SilentlyContinue
         }
     }
 }

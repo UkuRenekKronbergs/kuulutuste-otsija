@@ -53,7 +53,9 @@ function Get-OstaListings {
     $encoded = [uri]::EscapeDataString($Keyword)
     # osta.ee otsing: /?fuseaction=search.search&q[q]=KEYWORD&q[cat]=1000&q[show_items]=1
     $url = "https://www.osta.ee/?fuseaction=search.search&q%5Bq%5D=$encoded&q%5Bcat%5D=1000&q%5Bshow_items%5D=1"
-    $resp = Invoke-EdgeFetch -Url $url -WaitMs $Config.edge_wait_ms -UserAgent $Config.user_agent
+    $profile = $null
+    if ($Config.edge_profile_dir) { $profile = $Config.edge_profile_dir }
+    $resp = Invoke-EdgeFetch -Url $url -WaitMs $Config.edge_wait_ms -UserAgent $Config.user_agent -ProfileDir $profile
     if (-not $resp -or -not $resp.Body) {
         Write-Warning "osta.ee: ei saanud vastust"
         return @()
@@ -106,7 +108,9 @@ function Get-OkidokiListings {
     param([string]$Keyword, [object]$Config)
     $encoded = [uri]::EscapeDataString($Keyword)
     $url = "https://www.okidoki.ee/buy/all/?query=$encoded&p_min=&p_max=&sort=price_asc"
-    $resp = Invoke-EdgeFetch -Url $url -WaitMs $Config.edge_wait_ms -UserAgent $Config.user_agent
+    $profile = $null
+    if ($Config.edge_profile_dir) { $profile = $Config.edge_profile_dir }
+    $resp = Invoke-EdgeFetch -Url $url -WaitMs $Config.edge_wait_ms -UserAgent $Config.user_agent -ProfileDir $profile
     if (-not $resp -or -not $resp.Body) {
         Write-Warning "okidoki.ee: ei saanud vastust"
         return @()
@@ -162,7 +166,9 @@ function Get-KuldneborsListings {
     param([string]$Keyword, [object]$Config)
     $encoded = [uri]::EscapeDataString($Keyword)
     $url = "https://www.kuldnebors.ee/search/search.mec?search_O_string=$encoded&pob_action=search"
-    $resp = Invoke-EdgeFetch -Url $url -WaitMs $Config.edge_wait_ms -UserAgent $Config.user_agent
+    $profile = $null
+    if ($Config.edge_profile_dir) { $profile = $Config.edge_profile_dir }
+    $resp = Invoke-EdgeFetch -Url $url -WaitMs $Config.edge_wait_ms -UserAgent $Config.user_agent -ProfileDir $profile
     if (-not $resp -or -not $resp.Body) {
         Write-Warning "kuldnebors.ee: ei saanud vastust"
         return @()
@@ -223,39 +229,50 @@ function Get-KuldneborsListings {
 
 function Get-YagaListings {
     param([string]$Keyword, [object]$Config)
+    # Yaga.ee on React/Next.js SPA ja näitab tulemustes ainult hinda + brändi, mitte toote pealkirja.
+    # Pealkirja saamiseks tuleks iga toote lehe eraldi pärida, mis oleks väga aeglane.
+    # Selle tõttu kasutame brändi ja URL-i keyword-matchinguks (nt otsides "Apple" leiame Apple'i tooteid).
+    # Yaga on peamiselt moemaja - elektroonikat sealt harva leiab.
     $encoded = [uri]::EscapeDataString($Keyword)
-    $url = "https://www.yaga.ee/search?q=$encoded&sort=price_asc"
-    $resp = Invoke-EdgeFetch -Url $url -WaitMs $Config.edge_wait_ms -UserAgent $Config.user_agent
+    $url = "https://www.yaga.ee/search?q=$encoded"
+    $profile = $null
+    if ($Config.edge_profile_dir) { $profile = $Config.edge_profile_dir }
+    $waitMs = [math]::Max($Config.edge_wait_ms, 25000)  # Yaga vajab pikemat aega kliendipoolsete päringute jaoks
+    $resp = Invoke-EdgeFetch -Url $url -WaitMs $waitMs -UserAgent $Config.user_agent -ProfileDir $profile
     if (-not $resp -or -not $resp.Body) {
         Write-Warning "yaga.ee: ei saanud vastust"
         return @()
     }
     $html = $resp.Body
     $results = @()
-    # yaga.ee: React app, kuulutused on linkidena /product/...
-    $pattern = '(?s)<a[^>]+href="(/(?:product|listing|item)/([a-z0-9-]+))"[^>]*>(.*?)</a>'
+    # Struktuur: <a class="no-style" href="/SHOP/toode/ID?rank=N">...<h5 class="price">33&nbsp;€</h5>...<div class="brand-container"><h5 class="details">BRAND</h5></div></a>
+    $pattern = '(?s)<a class="no-style" href="(/[^/]+/toode/([a-z0-9]+)\?rank=\d+)"[^>]*>(.*?)</a>'
     $matches = [regex]::Matches($html, $pattern)
-    $seenIds = @{}
     foreach ($m in $matches) {
         $id = $m.Groups[2].Value
-        if ($seenIds.ContainsKey($id)) { continue }
-        $seenIds[$id] = $true
         $href = "https://www.yaga.ee$($m.Groups[1].Value)"
-        $inner = $m.Groups[3].Value
-        $title = Remove-HtmlTags $inner
-        if (-not $title -or $title.Length -lt 3) { continue }
-        if (-not (Test-MatchesKeyword -Title $title -Keyword $Keyword)) { continue }
+        $block = $m.Groups[3].Value
 
-        $startIdx = [math]::Max(0, $m.Index - 500)
-        $context = $html.Substring($startIdx, [math]::Min(1500, $html.Length - $startIdx))
-        $priceMatch = [regex]::Match($context, '(\d{1,3}(?:[\s\u00A0]\d{3})*(?:[,\.]\d+)?)\s*€')
+        $priceMatch = [regex]::Match($block, '<h5 class="price">([^<]+)</h5>')
         if (-not $priceMatch.Success) { continue }
         $price = ConvertFrom-PriceString $priceMatch.Groups[1].Value
         if ($null -eq $price) { continue }
 
+        $brandMatch = [regex]::Match($block, '(?s)<div class="brand-container">.*?<h5 class="details">([^<]+)</h5>')
+        $brand = if ($brandMatch.Success) { ConvertFrom-HtmlEntities $brandMatch.Groups[1].Value } else { '' }
+
+        # Yaga'l pole pealkirja - kasutame brändi + shop-slug-i kombineeritult
+        $shopMatch = [regex]::Match($m.Groups[1].Value, '/([^/]+)/toode/')
+        $shop = if ($shopMatch.Success) { $shopMatch.Groups[1].Value } else { '' }
+        $pseudoTitle = (@($brand, $shop) | Where-Object { $_ } | ForEach-Object { $_ }) -join ' '
+        if (-not $pseudoTitle) { $pseudoTitle = $id }
+
+        # Kuna puudub täiskategooria pealkiri, teeme substring-matchingu brändi/shop suhtes
+        if (-not (Test-MatchesKeyword -Title $pseudoTitle -Keyword $Keyword)) { continue }
+
         $results += [pscustomobject]@{
             id       = "yaga:$id"
-            title    = $title
+            title    = $pseudoTitle
             price    = $price
             url      = $href
             site     = 'yaga.ee'

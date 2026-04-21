@@ -1,9 +1,12 @@
 {
-  "_comment": "Otsingusõnad ja iga märksõna hinnavahemik. Kuulutus loetakse 'heaks hinnaks' kui hind jääb vahemikku [min_price, max_price] JA hind <= mediaan * median_threshold. blocklist filtreerib välja aksessuaarid, et mediaan ja tulemused oleksid mõistlikud. okidoki.ee ja yaga.ee on vaikimisi välja lülitatud, sest Cloudflare blokeerib headless Edge'i.",
+  "_comment": "Otsingusõnad ja iga märksõna hinnavahemik. 'Hea hind' = min_price <= hind <= max_price JA hind <= mediaan * median_threshold. blocklist filtreerib välja aksessuaarid.",
+  "_okidoki": "okidoki.ee kasutab Cloudflare bot-kaitse. Käivita 'warmup.ps1' käsitsi enne okidoki lubamist - see avab brauseri, kus saad cf_clearance cookie. Seade edge_profile_dir hoiab cookie'd alles.",
+  "_yaga": "yaga.ee on moemaja - elektroonikat sealt harva leiab. Kui lubad, sobitab brändi/shop nime, mitte toote pealkirja.",
   "median_threshold": 0.85,
   "min_samples_for_median": 4,
   "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
   "edge_wait_ms": 12000,
+  "edge_profile_dir": null,
   "request_delay_ms": 1500,
   "blocklist": [
     "kaitse", "ümbris", "kaabel", "laadija", "klaas", "kaan", "kate",
