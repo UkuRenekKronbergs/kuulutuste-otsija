@@ -1,0 +1,7 @@
+state/
+results/
+tmp/
+samples/
+*.log
+*.tmp
+*.bak

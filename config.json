@@ -1,0 +1,33 @@
+{
+  "_comment": "Otsingusõnad ja iga märksõna hinnavahemik. Kuulutus loetakse 'heaks hinnaks' kui hind jääb vahemikku [min_price, max_price] JA hind <= mediaan * median_threshold. blocklist filtreerib välja aksessuaarid, et mediaan ja tulemused oleksid mõistlikud. okidoki.ee ja yaga.ee on vaikimisi välja lülitatud, sest Cloudflare blokeerib headless Edge'i.",
+  "median_threshold": 0.85,
+  "min_samples_for_median": 4,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+  "edge_wait_ms": 12000,
+  "request_delay_ms": 1500,
+  "blocklist": [
+    "kaitse", "ümbris", "kaabel", "laadija", "klaas", "kaan", "kate",
+    "tarvikud", "varuosa", "ekraan", "tagakate", "silikon", "silikoonist",
+    "korpus", "magsafe", "puldihoidja", "statiiv", "hoidja",
+    "case", "cover", "charger", "cable", "screen", "adapter", "chehol", "чехол"
+  ],
+  "sites": {
+    "soov": true,
+    "osta": true,
+    "kuldnebors": true,
+    "okidoki": false,
+    "yaga": false
+  },
+  "searches": [
+    { "keyword": "iphone 13",        "min_price": 100, "max_price": 400 },
+    { "keyword": "iphone 14",        "min_price": 150, "max_price": 550 },
+    { "keyword": "iphone 15",        "min_price": 300, "max_price": 700 },
+    { "keyword": "macbook",          "min_price": 200, "max_price": 700 },
+    { "keyword": "ipad",             "min_price": 50,  "max_price": 250 },
+    { "keyword": "samsung galaxy s23", "min_price": 150, "max_price": 400 },
+    { "keyword": "sony wh-1000",     "min_price": 50,  "max_price": 200 },
+    { "keyword": "airpods pro",      "min_price": 50,  "max_price": 150 },
+    { "keyword": "playstation 5",    "min_price": 150, "max_price": 350 },
+    { "keyword": "nintendo switch",  "min_price": 80,  "max_price": 200 }
+  ]
+}
