@@ -16,6 +16,11 @@ import time
 from datetime import datetime
 from pathlib import Path
 
+# Sunni UTF-8 väljund Windowsi konsoolis (muidu cp1252 katkestab eesti tähtede peal)
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+
 from lib.common import load_state, median_price, save_state
 from lib.scrapers import scrape_all
 

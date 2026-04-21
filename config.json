@@ -28,6 +28,16 @@
     { "keyword": "nintendo switch",  "min_price": 60,  "max_price": 175 },
     { "keyword": "Galaxy watch7",  "min_price": 50,  "max_price": 100 },
     { "keyword": "Playstation 4 Pro",  "min_price": 50,  "max_price": 100 },
-    { "keyword": "Ryzen 5 3600",  "min_price": 20,  "max_price": 50 }
+    { "keyword": "Ryzen 5 3600",  "min_price": 20,  "max_price": 50 },
+
+    { "keyword": "xbox series x",         "min_price": 250, "max_price": 400 },
+    { "keyword": "xbox series s",         "min_price": 120, "max_price": 220 },
+    { "keyword": "steam deck",            "min_price": 250, "max_price": 450 },
+
+    { "keyword": "dualsense",             "min_price": 25,  "max_price": 60 },
+    { "keyword": "dualshock 4",           "min_price": 15,  "max_price": 35 },
+    { "keyword": "xbox controller",       "min_price": 25,  "max_price": 55 },
+    { "keyword": "switch pro controller", "min_price": 30,  "max_price": 55 },
+    { "keyword": "joy-con",               "min_price": 30,  "max_price": 70 }
   ]
 }
