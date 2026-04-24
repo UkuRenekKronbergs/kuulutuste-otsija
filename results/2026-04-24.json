@@ -1,0 +1,19 @@
+{
+  "run_at": "2026-04-24T07:20:20+00:00",
+  "total": 1,
+  "listings": [
+    {
+      "id": "osta:251200162",
+      "title": "Playstation 4 Pro",
+      "price": 95.0,
+      "url": "https://www.osta.ee/playstation-4-pro-251200162.html",
+      "site": "osta.ee",
+      "location": "",
+      "date": "",
+      "keyword": "Playstation 4 Pro",
+      "median": 95.0,
+      "pct_under_med": 0,
+      "first_seen": "2026-04-24T07:20:20+00:00"
+    }
+  ]
+}
