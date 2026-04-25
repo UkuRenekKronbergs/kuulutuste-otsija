@@ -1,0 +1,97 @@
+{
+  "run_at": "2026-04-25T07:18:50+00:00",
+  "total": 7,
+  "listings": [
+    {
+      "id": "osta:250531646",
+      "title": "Uus Cyberpunk 2077 ULTIMATE Phantom Liberty (Nintendo SWITCH",
+      "price": 69.0,
+      "url": "https://www.osta.ee/uus-cyberpunk-2077-ultimate-phantom-liberty-nintendo-switch-250531646.html",
+      "site": "osta.ee",
+      "location": "",
+      "date": "",
+      "keyword": "nintendo switch",
+      "median": 100.0,
+      "pct_under_med": 31,
+      "first_seen": "2026-04-25T07:18:50+00:00"
+    },
+    {
+      "id": "osta:249994645",
+      "title": "RARE! Space Warlord Organ Trading Simulator nintendo switch",
+      "price": 73.0,
+      "url": "https://www.osta.ee/rare-space-warlord-organ-trading-simulator-nintendo-switch-249994645.html",
+      "site": "osta.ee",
+      "location": "",
+      "date": "",
+      "keyword": "nintendo switch",
+      "median": 100.0,
+      "pct_under_med": 27,
+      "first_seen": "2026-04-25T07:18:50+00:00"
+    },
+    {
+      "id": "osta:249832596",
+      "title": "OUTBREAK COLLECTION mäng uus (Nintendo Switch) Limited run",
+      "price": 69.38,
+      "url": "https://www.osta.ee/outbreak-collection-mang-uus-nintendo-switch-limited-run-249832596.html",
+      "site": "osta.ee",
+      "location": "",
+      "date": "",
+      "keyword": "nintendo switch",
+      "median": 100.0,
+      "pct_under_med": 31,
+      "first_seen": "2026-04-25T07:18:50+00:00"
+    },
+    {
+      "id": "osta:249832558",
+      "title": "Uus Halloween & Ash Evil Dead (Nintendo SWITCH) Retrorealms",
+      "price": 64.0,
+      "url": "https://www.osta.ee/uus-halloween-ash-evil-dead-nintendo-switch-retrorealms-249832558.html",
+      "site": "osta.ee",
+      "location": "",
+      "date": "",
+      "keyword": "nintendo switch",
+      "median": 100.0,
+      "pct_under_med": 36,
+      "first_seen": "2026-04-25T07:18:50+00:00"
+    },
+    {
+      "id": "osta:249832564",
+      "title": "Uus mäng Gothic Classic Nintendo Switch",
+      "price": 65.0,
+      "url": "https://www.osta.ee/uus-mang-gothic-classic-nintendo-switch-249832564.html",
+      "site": "osta.ee",
+      "location": "",
+      "date": "",
+      "keyword": "nintendo switch",
+      "median": 100.0,
+      "pct_under_med": 35,
+      "first_seen": "2026-04-25T07:18:50+00:00"
+    },
+    {
+      "id": "osta:251048354",
+      "title": "Microsoft Xbox Series S 512GB",
+      "price": 155.0,
+      "url": "https://www.osta.ee/microsoft-xbox-series-s-512gb-251048354.html",
+      "site": "osta.ee",
+      "location": "",
+      "date": "",
+      "keyword": "xbox series s",
+      "median": 157.5,
+      "pct_under_med": 2,
+      "first_seen": "2026-04-25T07:18:50+00:00"
+    },
+    {
+      "id": "soov:26076810",
+      "title": "Sony PlayStation 5 DualSense Controller Ps5 pult",
+      "price": 45.0,
+      "url": "https://soov.ee/26076810-sony-playstation-5-dualsense-controller-ps5-pult/details.html",
+      "site": "soov.ee",
+      "location": "Harjumaa",
+      "date": "2026-04-24 16:25:23",
+      "keyword": "dualsense",
+      "median": 45.0,
+      "pct_under_med": 0,
+      "first_seen": "2026-04-25T07:18:50+00:00"
+    }
+  ]
+}
