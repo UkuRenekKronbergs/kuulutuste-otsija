@@ -1,0 +1,32 @@
+{
+  "run_at": "2026-04-26T07:03:08+00:00",
+  "total": 2,
+  "listings": [
+    {
+      "id": "osta:251306513",
+      "title": "MOBAPAD M6 HD Black Version Nintendo Switch (Oled) !!!",
+      "price": 70.0,
+      "url": "https://www.osta.ee/mobapad-m6-hd-black-version-nintendo-switch-oled-251306513.html",
+      "site": "osta.ee",
+      "location": "",
+      "date": "",
+      "keyword": "nintendo switch",
+      "median": 90.0,
+      "pct_under_med": 22,
+      "first_seen": "2026-04-26T07:03:08+00:00"
+    },
+    {
+      "id": "osta:251278024",
+      "title": "Hori Split Pad Pro (Pikachu Black/Gold) for Nintendo Switch",
+      "price": 60.0,
+      "url": "https://www.osta.ee/hori-split-pad-pro-pikachu-blackgold-for-nintendo-switch-251278024.html",
+      "site": "osta.ee",
+      "location": "",
+      "date": "",
+      "keyword": "nintendo switch",
+      "median": 90.0,
+      "pct_under_med": 33,
+      "first_seen": "2026-04-26T07:03:08+00:00"
+    }
+  ]
+}
