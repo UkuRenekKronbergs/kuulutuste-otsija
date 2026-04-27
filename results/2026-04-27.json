@@ -1,0 +1,71 @@
+{
+  "run_at": "2026-04-27T07:05:39+00:00",
+  "total": 5,
+  "listings": [
+    {
+      "id": "osta:251100446",
+      "title": "Iphone 15 Pro 256gb sn. d4cx4lpv3h",
+      "price": 250.0,
+      "url": "https://www.osta.ee/iphone-15-pro-256gb-sn-d4cx4lpv3h-251100446.html",
+      "site": "osta.ee",
+      "location": "",
+      "date": "",
+      "keyword": "iphone 15",
+      "median": 340.0,
+      "pct_under_med": 26,
+      "first_seen": "2026-04-27T07:05:39+00:00"
+    },
+    {
+      "id": "osta:251361380",
+      "title": "Uus Halloween & Ash Evil Dead (Nintendo SWITCH) Retrorealms",
+      "price": 64.0,
+      "url": "https://www.osta.ee/uus-halloween-ash-evil-dead-nintendo-switch-retrorealms-251361380.html",
+      "site": "osta.ee",
+      "location": "",
+      "date": "",
+      "keyword": "nintendo switch",
+      "median": 102.5,
+      "pct_under_med": 38,
+      "first_seen": "2026-04-27T07:05:39+00:00"
+    },
+    {
+      "id": "osta:251361374",
+      "title": "Uus Gothic II Classic COMPLETE (Nintendo Switch)",
+      "price": 69.0,
+      "url": "https://www.osta.ee/uus-gothic-ii-classic-complete-nintendo-switch-251361374.html",
+      "site": "osta.ee",
+      "location": "",
+      "date": "",
+      "keyword": "nintendo switch",
+      "median": 102.5,
+      "pct_under_med": 33,
+      "first_seen": "2026-04-27T07:05:39+00:00"
+    },
+    {
+      "id": "osta:251198810",
+      "title": "Sony DualSense pult",
+      "price": 20.0,
+      "url": "https://www.osta.ee/sony-dualsense-pult-251198810.html",
+      "site": "osta.ee",
+      "location": "",
+      "date": "",
+      "keyword": "dualsense",
+      "median": 35.0,
+      "pct_under_med": 43,
+      "first_seen": "2026-04-27T07:05:39+00:00"
+    },
+    {
+      "id": "osta:251382858",
+      "title": "Pult Sony DualSense",
+      "price": 35.0,
+      "url": "https://www.osta.ee/pult-sony-dualsense-251382858.html",
+      "site": "osta.ee",
+      "location": "",
+      "date": "",
+      "keyword": "dualsense",
+      "median": 35.0,
+      "pct_under_med": 0,
+      "first_seen": "2026-04-27T07:05:39+00:00"
+    }
+  ]
+}
