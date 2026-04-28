@@ -1,0 +1,32 @@
+{
+  "run_at": "2026-04-28T07:06:29+00:00",
+  "total": 2,
+  "listings": [
+    {
+      "id": "osta:251080558",
+      "title": "Playstation 4 Pro 1TB",
+      "price": 100.0,
+      "url": "https://www.osta.ee/playstation-4-pro-1tb-251080558.html",
+      "site": "osta.ee",
+      "location": "",
+      "date": "",
+      "keyword": "Playstation 4 Pro",
+      "median": 100.0,
+      "pct_under_med": 0,
+      "first_seen": "2026-04-28T07:06:29+00:00"
+    },
+    {
+      "id": "osta:251361373",
+      "title": "Uus mäng Gothic Classic Nintendo Switch",
+      "price": 65.0,
+      "url": "https://www.osta.ee/uus-mang-gothic-classic-nintendo-switch-251361373.html",
+      "site": "osta.ee",
+      "location": "",
+      "date": "",
+      "keyword": "nintendo switch",
+      "median": 79.0,
+      "pct_under_med": 18,
+      "first_seen": "2026-04-28T07:06:29+00:00"
+    }
+  ]
+}
