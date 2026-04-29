@@ -1,0 +1,19 @@
+{
+  "run_at": "2026-04-29T07:09:31+00:00",
+  "total": 1,
+  "listings": [
+    {
+      "id": "osta:251470959",
+      "title": "UUS, avamata Apple iPhone 17 Pro 256GB",
+      "price": 890.0,
+      "url": "https://www.osta.ee/uus-avamata-apple-iphone-17-pro-256gb-251470959.html",
+      "site": "osta.ee",
+      "location": "",
+      "date": "",
+      "keyword": "iphone 17 pro",
+      "median": 890.0,
+      "pct_under_med": 0,
+      "first_seen": "2026-04-29T07:09:31+00:00"
+    }
+  ]
+}
