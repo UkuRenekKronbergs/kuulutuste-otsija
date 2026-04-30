@@ -1,0 +1,32 @@
+{
+  "run_at": "2026-04-30T07:19:29+00:00",
+  "total": 2,
+  "listings": [
+    {
+      "id": "osta:251361381",
+      "title": "Uus Streets of Rage 4 Anniversary Edition - Nintendo SWITCH",
+      "price": 69.0,
+      "url": "https://www.osta.ee/uus-streets-of-rage-4-anniversary-edition-nintendo-switch-251361381.html",
+      "site": "osta.ee",
+      "location": "",
+      "date": "",
+      "keyword": "nintendo switch",
+      "median": 90.0,
+      "pct_under_med": 23,
+      "first_seen": "2026-04-30T07:19:29+00:00"
+    },
+    {
+      "id": "osta:251361351",
+      "title": "OUTBREAK COLLECTION mäng uus (Nintendo Switch) Limited run",
+      "price": 69.38,
+      "url": "https://www.osta.ee/outbreak-collection-mang-uus-nintendo-switch-limited-run-251361351.html",
+      "site": "osta.ee",
+      "location": "",
+      "date": "",
+      "keyword": "nintendo switch",
+      "median": 90.0,
+      "pct_under_med": 23,
+      "first_seen": "2026-04-30T07:19:29+00:00"
+    }
+  ]
+}
