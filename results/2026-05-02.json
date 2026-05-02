@@ -1,0 +1,19 @@
+{
+  "run_at": "2026-05-02T07:22:31+00:00",
+  "total": 1,
+  "listings": [
+    {
+      "id": "osta:251629601",
+      "title": "Nintendo switch pro controller",
+      "price": 30.0,
+      "url": "https://www.osta.ee/nintendo-switch-pro-controller-251629601.html",
+      "site": "osta.ee",
+      "location": "",
+      "date": "",
+      "keyword": "switch pro controller",
+      "median": 30.0,
+      "pct_under_med": 0,
+      "first_seen": "2026-05-02T07:22:31+00:00"
+    }
+  ]
+}
