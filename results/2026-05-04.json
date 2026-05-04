@@ -1,0 +1,19 @@
+{
+  "run_at": "2026-05-04T07:12:42+00:00",
+  "total": 1,
+  "listings": [
+    {
+      "id": "soov:26080818",
+      "title": "iPhone 15 256GB",
+      "price": 300.0,
+      "url": "https://soov.ee/26080818-iphone-15-256gb/details.html",
+      "site": "soov.ee",
+      "location": "Harjumaa",
+      "date": "2026-04-29 09:29:31",
+      "keyword": "iphone 15",
+      "median": 300.0,
+      "pct_under_med": 0,
+      "first_seen": "2026-05-04T07:12:42+00:00"
+    }
+  ]
+}
