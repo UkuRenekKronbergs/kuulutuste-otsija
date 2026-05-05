@@ -1,0 +1,71 @@
+{
+  "run_at": "2026-05-05T07:09:32+00:00",
+  "total": 5,
+  "listings": [
+    {
+      "id": "soov:26080818",
+      "title": "iPhone 15 256GB",
+      "price": 300.0,
+      "url": "https://soov.ee/26080818-iphone-15-256gb/details.html",
+      "site": "soov.ee",
+      "location": "Harjumaa",
+      "date": "2026-04-29 09:29:31",
+      "keyword": "iphone 15",
+      "median": 300.0,
+      "pct_under_med": 0,
+      "first_seen": "2026-05-05T07:09:32+00:00"
+    },
+    {
+      "id": "osta:251809799",
+      "title": "Xbox Series X 1TB",
+      "price": 210.0,
+      "url": "https://www.osta.ee/xbox-series-x-1tb-251809799.html",
+      "site": "osta.ee",
+      "location": "",
+      "date": "",
+      "keyword": "xbox series x",
+      "median": 210.0,
+      "pct_under_med": 0,
+      "first_seen": "2026-05-05T07:09:32+00:00"
+    },
+    {
+      "id": "osta:251811797",
+      "title": "Steam Deck 512GB",
+      "price": 210.0,
+      "url": "https://www.osta.ee/steam-deck-512gb-251811797.html",
+      "site": "osta.ee",
+      "location": "",
+      "date": "",
+      "keyword": "steam deck",
+      "median": 210.0,
+      "pct_under_med": 0,
+      "first_seen": "2026-05-05T07:09:32+00:00"
+    },
+    {
+      "id": "osta:251766548",
+      "title": "Sony DualSense PS5 pult",
+      "price": 35.0,
+      "url": "https://www.osta.ee/sony-dualsense-ps5-pult-251766548.html",
+      "site": "osta.ee",
+      "location": "",
+      "date": "",
+      "keyword": "dualsense",
+      "median": 35.0,
+      "pct_under_med": 0,
+      "first_seen": "2026-05-05T07:09:32+00:00"
+    },
+    {
+      "id": "osta:251629601",
+      "title": "Nintendo switch pro controller",
+      "price": 30.0,
+      "url": "https://www.osta.ee/nintendo-switch-pro-controller-251629601.html",
+      "site": "osta.ee",
+      "location": "",
+      "date": "",
+      "keyword": "switch pro controller",
+      "median": 30.0,
+      "pct_under_med": 0,
+      "first_seen": "2026-05-05T07:09:32+00:00"
+    }
+  ]
+}
