@@ -1,0 +1,45 @@
+{
+  "run_at": "2026-05-07T07:10:29+00:00",
+  "total": 3,
+  "listings": [
+    {
+      "id": "osta:251923848",
+      "title": "Iphone 15",
+      "price": 330.0,
+      "url": "https://www.osta.ee/iphone-15-251923848.html",
+      "site": "osta.ee",
+      "location": "",
+      "date": "",
+      "keyword": "iphone 15",
+      "median": 330.0,
+      "pct_under_med": 0,
+      "first_seen": "2026-05-07T07:10:29+00:00"
+    },
+    {
+      "id": "osta:251616281",
+      "title": "RARE! Space Warlord Organ Trading Simulator nintendo switch",
+      "price": 73.0,
+      "url": "https://www.osta.ee/rare-space-warlord-organ-trading-simulator-nintendo-switch-251616281.html",
+      "site": "osta.ee",
+      "location": "",
+      "date": "",
+      "keyword": "nintendo switch",
+      "median": 95.0,
+      "pct_under_med": 23,
+      "first_seen": "2026-05-07T07:10:29+00:00"
+    },
+    {
+      "id": "osta:251869010",
+      "title": "Valve Steam Deck OLED 512GB KEHTIV GARANTII!",
+      "price": 269.99,
+      "url": "https://www.osta.ee/valve-steam-deck-oled-512gb-kehtiv-garantii-251869010.html",
+      "site": "osta.ee",
+      "location": "",
+      "date": "",
+      "keyword": "steam deck",
+      "median": 239.995,
+      "pct_under_med": -12,
+      "first_seen": "2026-05-07T07:10:29+00:00"
+    }
+  ]
+}
