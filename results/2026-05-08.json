@@ -1,0 +1,45 @@
+{
+  "run_at": "2026-05-08T07:07:48+00:00",
+  "total": 3,
+  "listings": [
+    {
+      "id": "osta:250576440",
+      "title": "iPhone 15 Pro Natural Titanium",
+      "price": 510.0,
+      "url": "https://www.osta.ee/iphone-15-pro-natural-titanium-250576440.html",
+      "site": "osta.ee",
+      "location": "",
+      "date": "",
+      "keyword": "iphone 15 pro",
+      "median": 499.5,
+      "pct_under_med": -2,
+      "first_seen": "2026-05-08T07:07:48+00:00"
+    },
+    {
+      "id": "osta:251967590",
+      "title": "Playstation 4 Pro 1TB + 2 pulti ja kaamera",
+      "price": 51.0,
+      "url": "https://www.osta.ee/playstation-4-pro-1tb-2-pulti-ja-kaamera-251967590.html",
+      "site": "osta.ee",
+      "location": "",
+      "date": "",
+      "keyword": "Playstation 4 Pro",
+      "median": 51.0,
+      "pct_under_med": 0,
+      "first_seen": "2026-05-08T07:07:48+00:00"
+    },
+    {
+      "id": "osta:251919282",
+      "title": "Xbox Series X 1TB",
+      "price": 210.0,
+      "url": "https://www.osta.ee/xbox-series-x-1tb-251919282.html",
+      "site": "osta.ee",
+      "location": "",
+      "date": "",
+      "keyword": "xbox series x",
+      "median": 210.0,
+      "pct_under_med": 0,
+      "first_seen": "2026-05-08T07:07:48+00:00"
+    }
+  ]
+}
