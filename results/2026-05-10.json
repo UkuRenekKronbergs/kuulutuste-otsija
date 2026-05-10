@@ -1,0 +1,19 @@
+{
+  "run_at": "2026-05-10T07:07:42+00:00",
+  "total": 1,
+  "listings": [
+    {
+      "id": "osta:251996640",
+      "title": "Sony wireless controller PlayStation 5 DualSense, white",
+      "price": 23.22,
+      "url": "https://www.osta.ee/sony-wireless-controller-playstation-5-dualsense-white-251996640.html",
+      "site": "osta.ee",
+      "location": "",
+      "date": "",
+      "keyword": "dualsense",
+      "median": 39.0,
+      "pct_under_med": 40,
+      "first_seen": "2026-05-10T07:07:42+00:00"
+    }
+  ]
+}
